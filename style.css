@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+#nav-bar-bg{
+    background-color: #6C9AC6;
+    position: static;
+    z-index: 1;
+    text-align: center;
+}
+
+#nav-bar-bg img{
+    width: 200px;
+    
+}
+
+
+/*Header*/
+
+/*categores*/
+
+
+
+
+
+/*categores*/
+
+/*finance*/
+#Financeheader a{
+    margin: 10px;
+    font-size: large;
+}
+
+
+
+
+/*finance*/
+
+
+#accountant p{
+    margin: 25px;
+    font-size: large;
+}
+
+#CFO p{
+    margin: 25px;
+    font-size: large;
+}
+
+#Finance p {
+    margin: 25px;
+    font-size: large;
+}
+
+/*finance*/
+
+
+/*finance manager*/
+
+#Fmanager{
+    margin: 25px;
+    font-size: large;
+}
+
+/*finance manager*/
+
+
+#adminEx{
+    margin: 25px;
+    font-size: large;
+}
+
+#adminM{
+    margin: 25px;
+    font-size: large;
+}
+
+#executiveAssit{
+    margin: 25px;
+    font-size: large;
+}
+
+#searchbar{
+    border: 2px solid black;
+}
+
+li a{
+    text-decoration: none;
+    
+}
+
+h1{
+    text-align: center;
+}
+
