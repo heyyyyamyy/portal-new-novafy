@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novafy Portal</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="container-fluid " id="nav-bar-bg">
+        <div class="container py-3">
+            <div class="row ">
+                <div class="col-12 col-xl-12">
+                    <img src="https://novafyasia.in/company_logo-removebg-preview(1).png" class="img-fluid " alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid">
+
+        <h1>Andriod Developer</h1>
+        <div class="container py-5">
+
+            <p> 1. Question: What is the Android SDK, and why is it essential for Android development?</p>
+            <p></p>
+            <p>Answer: The Android Software Development Kit (SDK) is a set of tools provided by Google to develop
+                applications for Android devices. It includes libraries, debugger, emulator, and documentation. The SDK
+                is crucial for Android development as it provides necessary resources and functionalities, making it
+                easier for developers to create, test, and debug Android applications.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 2. Question: Differentiate between Activities and Fragments in Android.</p>
+            <p></p>
+            <p>Answer: An Activity represents a single screen with a user interface, while a Fragment is a modular
+                section of an activity, designed to encapsulate a specific behavior or interface. Fragments allow for
+                more flexible and modular UI design, and they can be combined in different ways to create diverse user
+                interfaces within an activity.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 3. Question: Explain the Android application life cycle.</p>
+            <p></p>
+            <p>Answer: The Android application life cycle consists of four main states: </p>
+            <p></p>
+            <p>* Inactive State: The application is not in the foreground or visible.</p>
+            <p>* Active/Running State: The application is in the foreground and visible to the user.</p>
+            <p>* Paused State: The application is partially visible but not in focus. It can be in this state when
+                another activity partially covers it.</p>
+            <p>* Stopped State: The application is not visible to the user, and its resources may be reclaimed by the
+                system.</p>
+            <p></p>
+            <p>* Understanding these states is crucial for managing resources efficiently and providing a smooth user
+                experience.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 4. Question: What is the role of the AndroidManifest.xml file in an Android application?</p>
+            <p></p>
+            <p>Answer: The AndroidManifest.xml file is a crucial configuration file that provides essential information
+                about an Android application. It includes details such as the application's package name, components
+                (activities, services, broadcast receivers), permissions required, and hardware features used by the
+                application. The Android system uses this file to understand the structure and requirements of the
+                application.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 5. Question: How does data persistence work in Android, and what are the various options?</p>
+            <p></p>
+            <p>Answer: Data persistence in Android involves storing and retrieving data between application launches.
+                There are multiple options for data persistence, including SharedPreferences for simple keyvalue pairs,
+                SQLite for relational databases, and file storage. Room Persistence Library is also commonly used,
+                providing an abstraction layer over SQLite for more straightforward database operations.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 6. Question: Explain the differences between Serializable and Parcelable in Android.</p>
+            <p></p>
+            <p>Answer: Both Serializable and Parcelable are used for passing data between activities, but Parcelable is
+                more efficient for Android. Serializable uses reflection and has a higher overhead, whereas Parcelable
+                is a special Android interface designed for efficient IPC (InterProcess Communication) between
+                components.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 7. Question: How does threading work in Android, and why is it essential for responsive UI?</p>
+            <p></p>
+            <p>Answer: In Android, the UI thread (main thread) is responsible for handling user interface interactions.
+                Performing timeconsuming tasks on this thread can lead to unresponsive UI. Therefore, developers use
+                background threads or AsyncTask to perform tasks like network operations or database queries without
+                blocking the main thread, ensuring a smooth user experience.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 8. Question: What is the significance of Content Providers in Android?</p>
+            <p></p>
+            <p>Answer: Content Providers facilitate data sharing between applications. They allow one application to
+                access the data of another application, promoting a secure and standardized way to interact with data.
+                Content Providers are often used to expose databases or files to other applications while maintaining
+                control over access permissions.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 9. Question: How does Dependency Injection (DI) work in Android development?</p>
+            <p></p>
+            <p>Answer: Dependency Injection is a design pattern used to enhance code modularity and testability. In
+                Android, frameworks like Dagger are commonly used for dependency injection. DI involves providing a
+                class its dependencies from an external source rather than creating them within the class. This makes
+                the code more flexible and easier to maintain.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 10. Question: What is the Android Gradle plugin, and how does it simplify the build process?</p>
+            <p></p>
+            <p>Answer: The Android Gradle plugin is a build automation tool that helps manage and automate the build
+                process for Android applications. It uses the Gradle build system to handle tasks such as compiling
+                code, managing dependencies, and creating APKs. The plugin simplifies complex build configurations and
+                allows developers to customize various aspects of the build process, making it more efficient and
+                manageable.</p>
+            <p></p>
+            <p> 11. Question: Explain the differences between implicit and explicit intents in Android.</p>
+            <p></p>
+            <p>Answer: Explicit intents specify the target component within the same application, while implicit intents
+                are used to invoke components from other applications. Implicit intents are declared with an action,
+                data type, or category, allowing the system to find the appropriate component to handle the request.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 12. Question: What is the ViewHolder pattern in Android, and why is it beneficial in RecyclerViews?</p>
+            <p></p>
+            <p>Answer: The ViewHolder pattern is used to improve the performance of RecyclerViews by caching references
+                to the views of each item in a list. It reduces the number of `findViewById` calls, making scrolling
+                smoother and more efficient. The ViewHolder pattern is commonly employed to optimize the creation and
+                binding of views in a RecyclerView.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 13. Question: How does ProGuard contribute to Android app security?</p>
+            <p></p>
+            <p>Answer: ProGuard is a code shrinking and obfuscation tool used to reduce the size of the APK and make the
+                code more difficult to reverse engineer. It helps enhance app security by renaming classes, methods, and
+                variables, as well as removing unused code. This makes it challenging for malicious users to understand
+                and tamper with the app's logic.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 14. Question: What is the Android Jetpack library, and how does it simplify Android development?</p>
+            <p></p>
+            <p>Answer: Android Jetpack is a set of libraries, tools, and guidance provided by Google to help developers
+                build highquality Android apps. It simplifies Android development by providing components for common
+                tasks such as navigation, data persistence, UI, and more. Jetpack promotes best practices, improves code
+                consistency, and accelerates the development process.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 15. Question: Describe the differences between AsyncTask and HandlerThread in Android.</p>
+            <p></p>
+            <p>Answer: AsyncTask is a simple way to perform background tasks on a separate thread, typically used for
+                shortlived operations. HandlerThread, on the other hand, is a thread with its own looper, allowing for
+                efficient message handling. It is suitable for more extended background operations where you need to
+                handle messages and callbacks.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 16. Question: What is the Android Data Binding Library, and how does it simplify UI development?</p>
+            <p></p>
+            <p>Answer: The Android Data Binding Library allows developers to bind UI components in the layout to data
+                sources in the app using a declarative format. It reduces boilerplate code by automatically updating the
+                UI when the underlying data changes. This library simplifies the codebase and improves maintainability
+                by establishing a direct link between UI elements and data sources.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 17. Question: Explain the concept of AsyncTaskLoader in Android.</p>
+            <p></p>
+            <p>Answer: AsyncTaskLoader is a part of the Loader framework introduced in Android to simplify the loading
+                and managing of data in activities and fragments. It performs data loading operations on a separate
+                thread and survives configuration changes. AsyncTaskLoader is particularly useful for loading data that
+                should persist across device rotations without restarting the loading process.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 18. Question: What is the purpose of the ADB (Android Debug Bridge), and how is it used in Android
+                development?</p>
+            <p></p>
+            <p>Answer: The Android Debug Bridge (ADB) is a commandline tool used to communicate with an Android device
+                or emulator. Developers use ADB to install and debug applications, transfer files, and access the
+                device's shell. It plays a crucial role in the development and testing phases by providing a bridge
+                between the development environment and the Android device.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 19. Question: How does the RecyclerView differ from the ListView in Android?</p>
+            <p></p>
+            <p>Answer: RecyclerView is an enhanced version of ListView, designed to be more flexible and efficient.
+                Unlike ListView, RecyclerView separates the responsibilities of data management and view rendering,
+                allowing for more complex layouts. It also includes features like item animations and improved
+                performance through the use of the ViewHolder pattern.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 20. Question: Explain the concept of Dependency Inversion Principle (DIP) and how it relates to Android
+                development.</p>
+            <p></p>
+            <p>Answer: Dependency Inversion Principle is one of the SOLID principles of objectoriented design. It
+                suggests that highlevel modules (e.g., business logic) should not depend on lowlevel modules (e.g., data
+                access) but rather both should depend on abstractions. In Android development, adhering to DIP involves
+                using dependency injection frameworks or manual dependency injection to invert the flow of dependencies,
+                making the code more modular and easier to test.</p>
+            <p></p>
+            <p> 21. Question: What is the purpose of the Android Service class, and how is it different from other
+                components like Activities?</p>
+            <p></p>
+            <p>Answer: Android Service is a component that runs in the background to perform longrunning operations
+                without a user interface. It is different from Activities as it doesn't have a UI and can run
+                independently of user interactions. Services are commonly used for tasks like playing music, handling
+                network operations, or executing background processes.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 22. Question: Explain the concept of ViewBinding in Android and its advantages over findViewById.</p>
+            <p></p>
+            <p>Answer: ViewBinding is a feature introduced to replace `findViewById` in Android development. It
+                generates a binding class for each XML layout file, allowing developers to access views directly without
+                the need for `findViewById` calls. ViewBinding is typesafe, reduces boilerplate code, and helps catch
+                errors during compiletime rather than runtime.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 23. Question: What is the Android Architecture Components library, and how does it contribute to app
+                architecture?</p>
+            <p></p>
+            <p>Answer: The Android Architecture Components library includes a set of libraries introduced by Google to
+                help developers design robust, testable, and maintainable applications. Key components include
+                ViewModel, LiveData, Room, and Navigation. These components promote separation of concerns, facilitate
+                lifecycle management, and simplify data persistence and UIrelated tasks.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 24. Question: Describe the differences between Serializable and Parcelable interfaces in Android, and
+                when would you use each?</p>
+            <p></p>
+            <p>Answer: Serializable and Parcelable are both used for object serialization in Android, but Parcelable is
+                preferred for performance reasons. Parcelable is faster and more efficient as it is designed
+                specifically for Android's IPC mechanism. Serializable, while simpler to implement, may incur higher
+                overhead due to its generic nature. Parcelable is recommended for passing data between Android
+                components.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 25. Question: What is the Android NDK, and when would you use it in app development?</p>
+            <p></p>
+            <p>Answer: The Android Native Development Kit (NDK) allows developers to include native code (written in
+                languages like C and C++) in their Android applications. It is typically used when performance
+                optimization is critical, or when leveraging existing native code libraries is necessary. The NDK is not
+                the primary tool for Android development, and developers usually use Java/Kotlin for the majority of
+                their code.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 26. Question: How does the Android Memory Management system work, and what practices can developers
+                follow to optimize memory usage?</p>
+            <p></p>
+            <p>Answer: Android's Memory Management system includes features like garbage collection to reclaim memory
+                occupied by objects no longer in use. Developers can optimize memory usage by avoiding memory leaks
+                (e.g., releasing references when not needed), efficiently managing bitmaps, and using tools like the
+                Android Profiler to identify and address memoryrelated issues.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 27. Question: What is the role of the Android Notification system, and how can developers create and
+                customize notifications?</p>
+            <p></p>
+            <p>Answer: The Android Notification system is used to alert users about events or updates from applications.
+                Developers can create and customize notifications using the NotificationCompat library. This includes
+                setting icons, actions, styles, and handling user interactions. Notifications are crucial for enhancing
+                the user experience by keeping users informed about important events.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 28. Question: Explain the differences between SQLite and Room Persistence Library for local data storage
+                in Android.</p>
+            <p></p>
+            <p>Answer: SQLite is a traditional database engine, while Room Persistence Library is a higherlevel
+                abstraction built on top of SQLite. Room simplifies database operations by providing a fluent API and
+                compiletime query verification. It also handles common tasks like database creation and version
+                management. Room is recommended for local data storage in Android due to its ease of use and efficiency.
+            </p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 29. Question: What are the benefits of using the ModelViewViewModel (MVVM) architecture in Android
+                development?</p>
+            <p></p>
+            <p>Answer: MVVM is an architectural pattern that separates the presentation layer from the business logic in
+                an application. Its benefits include improved testability, maintainability, and scalability. ViewModel,
+                a component in MVVM, survives configuration changes and holds UIrelated data. By adopting MVVM,
+                developers can create wellstructured and modular codebases.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 30. Question: How does the Android App Bundle improve app distribution, and what are its key features?
+            </p>
+            <p></p>
+            <p>Answer: The Android App Bundle is a publishing format introduced by Google that includes all the
+                resources and code needed to build an APK for a specific device configuration. It allows developers to
+                create smaller APKs and deliver only the necessary resources for a user's device, reducing download
+                sizes and improving installation times. Dynamic Delivery, a key feature of the App Bundle, enables
+                ondemand feature delivery.</p>
+            <p></p>
+            <p> 31. Question: What is the purpose of the Android ContentResolver, and how is it used in data access?</p>
+            <p></p>
+            <p>Answer: The `ContentResolver` is a central component in Android that provides a unified interface to
+                access and manipulate data across different content providers. It allows applications to query, insert,
+                update, and delete data from various sources, such as the device's contacts, calendar, and media.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 32. Question: Explain the concept of Android App Widgets and how they differ from regular app
+                components.</p>
+            <p></p>
+            <p>Answer: App Widgets are miniature application views that can be embedded within other applications or
+                placed on the home screen. They provide users with quick access to essential information or
+                functionalities without launching the full app. Unlike regular app components, App Widgets have a
+                limited UI and are primarily used for glanceable and lightweight interactions.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 33. Question: What is the Android JobScheduler, and how does it improve background task scheduling?</p>
+            <p></p>
+            <p>Answer: JobScheduler is an Android API introduced to efficiently manage and schedule background tasks. It
+                optimizes battery life by batch processing tasks, allowing the system to schedule multiple jobs
+                simultaneously. JobScheduler is particularly useful for handling periodic tasks or tasks that require
+                specific network conditions.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 34. Question: How does Android handle different screen sizes and resolutions, and what best practices
+                can developers follow for responsive UI design?</p>
+            <p></p>
+            <p>Answer: Android handles different screen sizes and resolutions through resource qualifiers (e.g., layout
+                folders for different screen sizes). Developers can use techniques like ConstraintLayout,
+                RelativeLayout, and ScrollView to create responsive UIs that adapt to various screen sizes. It's
+                essential to test the app on multiple devices and use densityindependent pixels (dp) for layout
+                dimensions.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 35. Question: Explain the Android ViewStub, and when would you use it in UI design?</p>
+            <p></p>
+            <p>Answer: `ViewStub` is a lightweight and invisible view container in Android that allows developers to
+                lazily inflate and load views at runtime. It is beneficial when dealing with complex layouts or dynamic
+                UIs, as it defers the inflation process until the view is actually needed, improving performance.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 36. Question: What is the significance of the Android Broadcast Receiver, and how can developers use it
+                to communicate between different components?</p>
+            <p></p>
+            <p>Answer: A Broadcast Receiver is a component that allows applications to receive and react to systemwide
+                broadcast announcements. It is useful for intercomponent communication, enabling one part of the
+                application to respond to events or changes initiated by another part. Broadcast Receivers are commonly
+                used for system events, like battery level changes or network connectivity.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 37. Question: How can you optimize network operations in Android, and what role does AsyncTask play in
+                this context?</p>
+            <p></p>
+            <p>Answer: Optimizing network operations involves performing network tasks asynchronously to prevent
+                blocking the main thread. AsyncTask is one way to achieve this by executing background tasks, such as
+                making network requests, on a separate thread. However, for more complex scenarios, developers might use
+                libraries like Retrofit or AsyncTaskLoader for improved efficiency.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 38. Question: What is the Android ViewModel, and how does it contribute to the separation of concerns in
+                app architecture?</p>
+            <p></p>
+            <p>Answer: ViewModel is a part of the Android Architecture Components that is designed to store and manage
+                UIrelated data. It survives configuration changes (e.g., screen rotations) and helps separate the
+                presentation layer from the underlying data and business logic. ViewModel is particularly useful for
+                maintaining data during the entire lifecycle of an activity or fragment.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 39. Question: Explain the role of the Android IntentFilter, and how it is used to enable or disable
+                components.</p>
+            <p></p>
+            <p>Answer: IntentFilter is used to declare the types of intents a component can respond to. It specifies the
+                actions, data types, and categories the component is interested in. Developers can use IntentFilter to
+                enable or disable components dynamically by adjusting the intentfilter declarations in the manifest.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 40. Question: What are Android App Permissions, and why is it crucial for users' privacy and security?
+            </p>
+            <p></p>
+            <p>Answer: Android App Permissions are security measures that grant or deny access to certain device
+                features or data. They ensure users have control over what information and resources an app can access.
+                Properly managing permissions is crucial for user privacy and security, as it prevents apps from
+                accessing sensitive data without user consent.</p>
+            <p></p>
+            <p> 41. Question: What is the Android ViewBinding, and how does it differ from ButterKnife?</p>
+            <p></p>
+            <p>Answer: ViewBinding is a feature introduced in Android to simplify the process of accessing views in an
+                activity or fragment. It generates a binding class that allows for direct access to views, eliminating
+                the need for `findViewById`. ButterKnife is a thirdparty library that serves a similar purpose but
+                requires additional dependencies. ViewBinding is a part of the Android framework and is recommended for
+                new projects.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 42. Question: Explain the role of AsyncTaskExecutor in Android's AsyncTask.</p>
+            <p></p>
+            <p>Answer: AsyncTaskExecutor is responsible for executing the tasks scheduled by an AsyncTask. It abstracts
+                the underlying execution mechanism, allowing tasks to be executed concurrently or sequentially depending
+                on the implementation. AsyncTaskExecutor is crucial for managing background tasks in a way that is
+                compatible with the Android platform's threading model.</p>
+            <p></p>
+            <p> 43. Question: What are the benefits of using Kotlin for Android development compared to Java?</p>
+            <p></p>
+            <p>Answer: Kotlin is a modern programming language that offers several advantages for Android development.
+                Some benefits include concise syntax, enhanced null safety, coroutines for asynchronous programming, and
+                improved interoperability with existing Java code. Kotlin also supports extension functions and has
+                become the preferred language for Android development by Google.</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p> 44. Question: Describe the Android ConstraintLayout, and how is it useful for UI design?</p>
+            <p></p>
+            <p>Answer: ConstraintLayout is a flexible layout manager introduced to simplify complex UI hierarchies in
+                Android. It allows developers to create responsive and dynamic layouts by defining constraints between
+                views, specifying their relative positioning and sizing. ConstraintLayout helps in achieving a flat view
+                hierarchy, resulting in improved performance.</p>
+            <p></p>
+            <p> 45. Question: What is the significance of the Android Handler class, and how is it used for
+                communication between threads?</p>
+            <p></p>
+            <p>Answer: The Handler class is used to schedule and execute code in a specific thread, typically the main
+                (UI) thread. It is often used in conjunction with the Looper class to create message queues for
+                interthread communication. Handlers are crucial for updating the UI from background threads and managing
+                concurrency in Android applications.</p>
+            <p></p>
+            <p> 46. Question: Explain the purpose of the Android Data Binding Library, and how does it enhance UI
+                development?</p>
+            <p></p>
+            <p>Answer: The Data Binding Library in Android allows developers to bind UI components in layouts to data
+                sources in their app. It eliminates the need for boilerplate code and simplifies the process of updating
+                UI elements when underlying data changes. Data Binding improves code readability and maintainability by
+                reducing the amount of manual view manipulation code.</p>
+            <p></p>
+            <p> 47. Question: What is the Android Keystore system, and how does it contribute to securing sensitive
+                information in an app?</p>
+            <p></p>
+            <p>Answer: The Android Keystore system is a secure container used to store cryptographic keys, certificates,
+                and sensitive information. It provides a secure environment for key management and protects sensitive
+                data from unauthorized access. Developers can use the Keystore system to generate, store, and retrieve
+                cryptographic keys securely within their applications.</p>
+            <p></p>
+            <p> 48. Question: Explain the concept of Dependency Injection (DI) and how Dagger 2 can be used in Android
+                for DI.</p>
+            <p></p>
+            <p>Answer: Dependency Injection is a design pattern that promotes loose coupling between components by
+                providing dependencies from an external source. Dagger 2 is a popular DI framework for Android that
+                generates boilerplate code for injecting dependencies into classes. It helps organize code, enhances
+                testability, and promotes modular design by providing a clear structure for managing dependencies.</p>
+            <p></p>
+            <p> 49. Question: What are the key features of Android App Bundles, and how do they improve app
+                distribution?</p>
+            <p></p>
+            <p>Answer: Android App Bundles are a publishing format that includes the base APK, as well as various
+                resources and code split configurations for different devices. Dynamic Delivery, a key feature of App
+                Bundles, allows Google Play to deliver only the necessary resources to a user's device, reducing APK
+                sizes and improving installation times. This helps in optimizing app distribution and minimizing
+                download sizes.</p>
+            <p></p>
+            <p> 50. Question: How does the Android JobIntentService differ from IntentService, and in what scenarios
+                would you use each?</p>
+            <p></p>
+            <p>Answer: JobIntentService is an improvement over IntentService, providing compatibility with the Android
+                JobScheduler framework. JobIntentService is recommended for background tasks that may be delayed or
+                deferred, ensuring better integration with the system's scheduling mechanisms. IntentService, on the
+                other hand, is suitable for simpler background tasks that require immediate execution.</p>
+            <p></p>
+        </div>
+    </section>
+
+    <footer class="bg-black py-3">
+        <h4 class="text-center text-white">@inHouse Novafy</h4>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

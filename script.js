@@ -113,3 +113,13 @@ function myFunction1() {
        text9.style.display = "none";
     }
   }
+
+  function myFunction10() {
+    var checkBox10 = document.getElementById("myCheck10");
+    var text10 = document.getElementById("text10");
+    if (checkBox10.checked == true){
+      text10.style.display = "block";
+    } else {
+       text10.style.display = "none";
+    }
+  }
